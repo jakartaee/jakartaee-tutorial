@@ -152,7 +152,7 @@ In more complex scenarios, task steps perform any task that does not fit the chu
 ----
 @Dependent
 @Named("MyBatchlet")
-public class MyBatchlet implements jakarta.batch.api.chunk.Batchlet {
+public class MyBatchlet implements jakarta.batch.api.Batchlet {
     @Inject
     private JobContext jobCtx;
     
