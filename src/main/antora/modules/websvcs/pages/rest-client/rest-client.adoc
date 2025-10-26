@@ -1,4 +1,5 @@
 = Accessing REST Resources with the Jakarta REST Client API
+:page-aliases: websvcs:jaxrs-client/jaxrs-client.adoc
 
 This chapter describes the Jakarta REST Client API and includes examples of how to access REST resources using the Java programming language.
 

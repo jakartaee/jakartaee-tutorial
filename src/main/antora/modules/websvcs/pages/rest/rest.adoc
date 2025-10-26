@@ -1,4 +1,5 @@
 = Building RESTful Web Services with Jakarta REST
+:page-aliases: websvcs:jaxrs/jaxrs.adoc
 
 This chapter describes the REST architecture, RESTful web services, and the Jakarta RESTful Web Services.
 
