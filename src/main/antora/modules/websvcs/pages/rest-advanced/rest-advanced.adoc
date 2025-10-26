@@ -1,4 +1,5 @@
 = Jakarta REST: Advanced Topics and an Example
+:page-aliases: websvcs:jaxrs-advanced/jaxrs-advanced.adoc
 
 Jakarta RESTful Web Services (Jakarta REST) is designed to make it easy to develop applications that use the REST architecture.
 This chapter describes advanced features of Jakarta REST.
