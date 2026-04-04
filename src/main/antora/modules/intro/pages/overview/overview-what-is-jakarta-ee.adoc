@@ -2,7 +2,7 @@
 
 Jakarta EE is a collection of services that help you write enterprise applications that run on the Java Platform.
 It provides the infrastructure often required for these applications
-so you that you can focus on core features and business logic.
+so that you can focus on core features and business logic.
 
 *Enterprise applications* support the high levels of security,
 scalability, and reliability that large organizations typically require.

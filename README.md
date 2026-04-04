@@ -1,7 +1,7 @@
 # Jakarta EE Tutorial
 
 This repository contains the source files that are used to build the
-_Jakarta Enterprise Edition (Jakarta EE) Tutorial_. 
+_Jakarta EE Tutorial_. 
 The source files are authored in [AsciiDoc](https://asciidoc.org/). 
 AsciiDoc is similar to markdown but is particularly suited for user documentation. 
 The source files are processed and integrated into the Jakarta EE Documentation site using
@@ -24,7 +24,7 @@ Guidelines for generating new images can be found in the [Contributing guide](CO
 ## Building
 
 The contents of this repo are built by
-the [jakartaee-tutorial-playbook repository](https://github.com/jakartaee/jakartaee-documentation).
+the [jakartaee-documentation repository](https://github.com/jakartaee/jakartaee-documentation).
 See that repo for details.
 
 ## Related Repositories
@@ -48,3 +48,4 @@ If you'd like to propose changes or additions to the content and/or images,
 please read the [Style guide](STYLE_GUIDE.adoc) and  
 [Contributing guide](CONTRIBUTING.md) for more information.
 
+[Join us on Slack](https://join.slack.com/t/eclipsefoundationhq/shared_invite/zt-2shajguc7-1ZwbvVtZkKrB4acy4U4aLQ) in the [#jakartaee-tutorial](https://eclipsefoundationhq.slack.com/archives/C050VD73M7C) channel to discuss open issues and plan updates.
