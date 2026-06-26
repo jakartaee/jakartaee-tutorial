@@ -25,7 +25,7 @@ public class MyServlet extends HttpServlet {
     private javax.sql.DataSource dsc;
     ...
     @Resource(name="java:comp/DefaultDataSource")
-    public void setDsc(java.sql.DataSource ds) {
+    public void setDsc(javax.sql.DataSource ds) {
         dsc = ds;
     }
 }
