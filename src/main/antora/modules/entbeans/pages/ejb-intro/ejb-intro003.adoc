@@ -51,5 +51,5 @@ For more information, see xref:messaging:jms-examples/jms-examples.adoc#_receivi
 === When to Use Message-Driven Beans
 
 Session beans allow you to send Jakarta Messaging messages and to receive them synchronously but not asynchronously.
-To avoid tying up server resources, do not to use blocking synchronous receives in a server-side component; in general, Jakarta Messaging messages should not be sent or received synchronously.
+To avoid tying up server resources, do not use blocking synchronous receives in a server-side component; in general, Jakarta Messaging messages should not be sent or received synchronously.
 To receive messages asynchronously, use a message-driven bean.
