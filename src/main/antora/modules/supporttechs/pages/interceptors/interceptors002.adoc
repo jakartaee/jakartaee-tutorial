@@ -257,7 +257,7 @@ Use the `jakarta.interceptor.InterceptorBinding` annotation on the custom annota
 @Target({TYPE, METHOD})
 @Retention(RUNTIME)
 @Inherited
-pubic @interface Logged { ... }
+public @interface Logged { ... }
 ----
 
 Interceptor binding types may also be applied to other interceptor binding types:
