@@ -31,7 +31,7 @@ When a request that includes credentials is sent to the application, the configu
 
 Post authentication, the application also verifies the roles the caller is in and sends the details as part of the response.
 
-Note that in GlassFish, if the user provides the wrong credentials when using `BasicAuthenticationMechanism`, then the `realmName` is presented to user, as a hint.
+Note that in GlassFish, if the user provides the wrong credentials when using `BasicAuthenticationMechanism`, then the `realmName` is presented to the user, as a hint.
 
 ----
 curl -I -u Joe http://localhost:8080/custom-identity-store/servlet
@@ -88,7 +88,7 @@ public class ApplicationConfig {
 ==== Declare Roles in the Servlet Container
 
 When a request is made to the application, the roles the user is in are returned as part of the response.
-Note that the container needs to be made aware of the supported roles, which are defined using the `@Declareroles({ "foo", "bar", "kaz" })` annotation as shown below.
+Note that the container needs to be made aware of the supported roles, which are defined using the `@DeclareRoles({ "foo", "bar", "kaz" })` annotation as shown below.
 
 [source,java]
 ----
