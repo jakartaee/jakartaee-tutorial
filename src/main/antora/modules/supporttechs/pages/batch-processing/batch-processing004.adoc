@@ -244,7 +244,7 @@ The step retries a chunk when a `MyResourceTempUnavailable` exception occurs, up
 
 The `batchlet` element is a child of the `step` element for task-oriented steps.
 This element only has the `ref` attribute, which specifies a batch artifact that implements the `Batchlet` interface.
-The `batch` element can contain a `properties` element.
+The `batchlet` element can contain a `properties` element.
 
 The following is an example of a task-oriented step:
 
@@ -446,7 +446,7 @@ This element sets the batch status to `FAILED`.
 
 * One `properties` element (optional).
 
-The following is an example of the `decider` element:
+The following is an example of the `decision` element:
 
 [source,xml]
 ----

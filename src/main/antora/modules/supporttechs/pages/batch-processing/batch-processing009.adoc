@@ -195,7 +195,7 @@ public class CallRecordReader implements ItemReader {
 }
 ----
 
-The `open` method reads the `log_filename` property and opens the log file with a buffered reader:
+The `open` method reads the `log_file_name` property and opens the log file with a buffered reader:
 
 [source,java]
 ----
