@@ -38,7 +38,7 @@ The `customer` example, described in xref:rest-advanced/rest-advanced.adoc#_the_
 Resources have representations.
 A resource representation is the content in the HTTP message that is sent to, or returned from, the resource using the URI.
 Each representation a resource supports has a corresponding media type.
-For example, if a resource is going to return content formatted as XML, you can use `application/xml` as the associated media type in the HTTP message.Depending on the requirements of your application, resources can return representations in a preferred single format or in multiple formats.
+For example, if a resource is going to return content formatted as XML, you can use `application/xml` as the associated media type in the HTTP message. Depending on the requirements of your application, resources can return representations in a preferred single format or in multiple formats.
 Jakarta REST provides `@Consumes` and `@Produces` annotations to declare the media types that are acceptable for a resource method to read and write.
 
 Jakarta REST also maps Java types to and from resource representations using entity providers.
