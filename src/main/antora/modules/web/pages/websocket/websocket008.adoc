@@ -11,7 +11,7 @@ public class ChatEndpoint {
 }
 ----
 
-If the endpoint is deployed inside a web application called `chatapp` at a local Jakarta EE server in port 8080, clients can connect to the endpoint using any of the following URIs:
+If the endpoint is deployed inside a web application called `chatapp` at a local Jakarta EE server on port 8080, clients can connect to the endpoint using any of the following URIs:
 
 ----
 http://localhost:8080/chatapp/chatrooms/currentnews

@@ -11,7 +11,7 @@ Jakarta JSON Binding contains the following packages:
 * The `jakarta.json.bind.annotation` package defines annotations that can be used to customize default binding behavior.
 Annotations can be used for field, JavaBean property, type, or package elements.
 
-* The `jakarta.json.bind.config` package interfaces and classes for customizing default binding behavior.
+* The `jakarta.json.bind.config` package provides interfaces and classes for customizing default binding behavior.
 <<_main_classes_and_interfaces_in_config>> lists the main classes and interfaces in this package.
 
 * The `jakarta.json.bind.serializer` package contains interfaces that are used to create serialization and deserialization routines for custom types that cannot be easily mapped using the `JsonbAdapter` methods.
@@ -26,7 +26,7 @@ This package contains the `JsonbProvider` class, which contains the methods that
 |===
 |Class or Interface |Description
 
-|`Jsonb` | Contains the JSON binding methods for serializing Java objects to JSON and deserailizing JSON to Java objects.
+|`Jsonb` | Contains the JSON binding methods for serializing Java objects to JSON and deserializing JSON to Java objects.
 
 |`JsonBuilder` | Used by clients to create `Jsonb` instances.
 

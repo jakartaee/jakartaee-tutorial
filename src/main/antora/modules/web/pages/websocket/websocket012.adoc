@@ -16,7 +16,7 @@ The `websocketbot` example application consists of the following elements:
 
 * <<_the_encoder_classes>> – A set of classes (`ChatMessageEncoder`, `InfoMessageEncoder`, `JoinMessageEncoder`, and `UsersMessageEncoder`) that encode application messages into WebSocket text messages as JSON data
 
-* <<_the_message_decoder>> – A class (`MessageDecoder`) the parses WebSocket text messages as JSON data and decodes them into `JoinMessage` or `ChatMessage` objects
+* <<_the_message_decoder>> – A class (`MessageDecoder`) that parses WebSocket text messages as JSON data and decodes them into `JoinMessage` or `ChatMessage` objects
 
 * <<_the_html_page>> – An HTML page (`index.html`) that uses JavaScript code to implement the client for the chat room
 
@@ -173,7 +173,7 @@ public class ChatMessageEncoder implements Encoder.Text<ChatMessage> {
 }
 ----
 
-See xref:jsonp/jsonp.adoc#_json_processing[JSON Processing] for more information on the Jakarta JSON Processing.
+See xref:jsonp/jsonp.adoc#_json_processing[JSON Processing] for more information on Jakarta JSON Processing.
 
 ==== The Message Decoder
 
@@ -292,12 +292,12 @@ See <<_to_test_the_websocketbot_example_application>> for more information.
 
 ==== To Test the websocketbot Example Application
 
-. On the main page, type your name on the first text field and press the Enter key.
+. On the main page, type your name in the first text field and press the Enter key.
 +
-The list of connected users appears on the text area on the right.
+The list of connected users appears in the text area on the right.
 The text area on the left is the chat room.
 
-. Type a message on the text area below the login button.
+. Type a message in the text area below the login button.
 For example, type the messages in bold and press enter to obtain responses similar to the following:
 +
 ----
@@ -309,7 +309,7 @@ Peter: @Duke when is your birthday?
 Duke: @Peter My birthday is on May 23rd. Thanks for asking!
 ----
 
-. Join the chat from another browser window by copying and pasting the URI on the address bar and joining with a different name.
+. Join the chat from another browser window by copying and pasting the URI in the address bar and joining with a different name.
 +
 The new user name appears in the list of users in both browser windows.
 You can send messages from either window and see how they appear in the other.

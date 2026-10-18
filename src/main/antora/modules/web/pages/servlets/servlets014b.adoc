@@ -1,6 +1,6 @@
 == HTTP Trailer
 
-HTTP trailer is a collection of a special type of HTTP headers that comes after the response body.
+The HTTP trailer is a collection of a special type of HTTP headers that comes after the response body.
 The trailer response header allows the sender to include additional fields at the end of chunked messages in order to supply metadata that might be dynamically generated while the message body is sent, such as a message integrity check, digital signature, or post-processing status.
 
 If trailer headers are ready for reading, `isTrailerFieldsReady()` will return `true`.

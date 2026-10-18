@@ -36,7 +36,7 @@ Here, the `faces` prefix is placed on the `id` attribute so that the HTML5 input
 This means that, for example, you can use EL expressions to retrieve managed bean properties.
 
 <<_how_facelets_renders_html5_elements>> shows how pass-through elements are rendered as Facelets tags.
-The faces implementation uses the element name and the identifying attribute to determine the corresponding Facelets tag that will be used in the server-side processing.
+The Jakarta Faces implementation uses the element name and the identifying attribute to determine the corresponding Facelets tag that will be used in the server-side processing.
 The browser, however, interprets the markup that the page author has written.
 
 [[_how_facelets_renders_html5_elements]]
@@ -204,7 +204,7 @@ The source code for this application is in the `_jakartaee-examples_/tutorial/we
 ==== The Facelets Pages for the reservation Application
 
 The first important feature of the Facelets pages for the `reservation` application is the `DOCTYPE` header.
-The facelets pages for this application begin simply with the following `DOCTYPE` header, which indicates that the XHTML-generated result is an HTML5 page:
+The Facelets pages for this application begin simply with the following `DOCTYPE` header, which indicates that the XHTML-generated result is an HTML5 page:
 
 [source,xml]
 ----
@@ -233,7 +233,7 @@ Next, an `h:head` tag followed by an `h:outputStylesheet` tag within the `h:body
     <h:outputStylesheet name="css/stylesheet.css" target="head" />
 ----
 
-The `reservation.xhtml` page uses a HTML5-specific `input` element type on `h:inputText`, which is `date`.
+The `reservation.xhtml` page uses an HTML5-specific `input` element type on `h:inputText`, which is `date`.
 
 [source,xml]
 ----
@@ -254,7 +254,7 @@ It also recalculates the total in response to a change in the field:
     </h:inputText>
 ----
 
-The field for the price specifies the `min`, `max` and `step` as a pass-through attribute of the `h:inputText` element, offering a range of four ticket prices.
+The field for the price specifies the `min`, `max` and `step` as pass-through attributes of the `h:inputText` element, offering a range of four ticket prices.
 Here, the `p` prefix on the HTML5 attributes passes them through to the browser uninterpreted by the Jakarta Faces input component:
 
 [source,xml]

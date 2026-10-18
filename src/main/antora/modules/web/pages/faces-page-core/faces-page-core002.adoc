@@ -70,7 +70,7 @@ The `type` attribute of the `f:actionListener` tag specifies the fully qualified
 Similarly to the `f:valueChangeListener` tag, the `f:actionListener` tag also supports the `binding` attribute.
 See xref:faces-custom/faces-custom.adoc#_binding_converters_listeners_and_validators_to_managed_bean_properties[Binding Converters, Listeners, and Validators to Managed Bean Properties] for more information about binding listeners to managed bean properties.
 
-In addition to the `actionListener` tag that allows you register a custom listener onto a component, the core tag library includes the `f:setPropertyActionListener` tag.
+In addition to the `actionListener` tag that allows you to register a custom listener onto a component, the core tag library includes the `f:setPropertyActionListener` tag.
 You use this tag to register a special action listener onto the `ActionSource` instance associated with a component.
 When the component is activated, the listener will store the object referenced by the tag's `value` attribute into the object referenced by the tag's `target` attribute.
 

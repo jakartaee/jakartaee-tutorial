@@ -64,7 +64,7 @@ To use a particular converter to convert a component's value, you need to regist
 You can register any of the standard converters in one of the following ways.
 
 * Nest one of the standard converter tags inside the component's tag.
-These tags are `f:convertDateTime` and `f:convertNumber`, which are described in <<_using_numberconverter>>, respectively.
+These tags are `f:convertDateTime` and `f:convertNumber`, which are described in <<_using_datetimeconverter>> and <<_using_numberconverter>>, respectively.
 
 * Bind the value of the component to a managed bean property of the same type as the converter.
 This is the most common technique.
@@ -83,7 +83,7 @@ public Integer getAge(){ return age;}
 public void setAge(Integer age) {this.age = age;}
 ----
 
-The data from the `h:inputText` tag in the this example will be converted to a `java.lang.Integer` value.
+The data from the `h:inputText` tag in this example will be converted to a `java.lang.Integer` value.
 The `Integer` type is a supported type of `NumberConverter`.
 If you don't need to specify any formatting instructions using the `f:convertNumber` tag attributes, and if one of the standard converters will suffice, you can simply reference that converter by using the component tag's `converter` attribute.
 

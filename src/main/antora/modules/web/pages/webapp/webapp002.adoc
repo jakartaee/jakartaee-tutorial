@@ -114,7 +114,7 @@ Refer to the documentation for your runtime for the most recent information.
 
 Undeploying a WAR file is generally done by removing the WAR file from the folder.
 
-Some runtimes offer a graphical user interface (GUI) for administration tasks such as selecting, uploading and a deploying a WAR file.
+Some runtimes offer a graphical user interface (GUI) for administration tasks such as selecting, uploading and deploying a WAR file.
 For this you'll need to start the server first and then open a specific URL in your web browser representing the location of the admin console:
 
 * In case of Eclipse GlassFish that's reachable via `http://localhost:4848`

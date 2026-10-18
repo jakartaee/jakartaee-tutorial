@@ -5,14 +5,14 @@ This section describes the following tasks involved with configuring Jakarta Ser
 * Preparing deployment descriptor
 * Setting context parameters
 * Declaring welcome files
-* Mapping errors to error screens
+* Mapping errors to error pages
 * Declaring resource references
 
 
 === Preparing Deployment Descriptor
 
 The Jakarta Servlet deployment descriptor is represented by the `WEB-INF/web.xml` file which is in a Maven-based project placed in `src/main/webapp` folder.
-It must be a XML file with a `<web-app>` root element conform the `web-app_X_Y.xsd` XML schema of the https://jakarta.ee/xml/ns/jakartaee[https://jakarta.ee/xml/ns/jakartaee] namespace.
+It must be an XML file with a `<web-app>` root element conform to the `web-app_X_Y.xsd` XML schema of the https://jakarta.ee/xml/ns/jakartaee[https://jakarta.ee/xml/ns/jakartaee] namespace.
 
 [source,xml]
 ----
@@ -49,7 +49,7 @@ String theme = servletContext.getInitParameter("com.example.THEME");
 ----
 
 These context parameters can be used to configure (default) application-wide variables, such as the web application's project stage, the path to save uploaded files, the path to a more specific configuration file, the maximum size of a cache, the expiration time of a cacheable resource, the name of the tenant/theme/scheme, or even helper library specific parameters, etcetera, but never passwords.
-It are those variables which you'd normally define as constants in a Java class, but then without the need to recompile Java classes whenever you'd like to edit them.
+These are those variables which you'd normally define as constants in a Java class, but then without the need to recompile Java classes whenever you'd like to edit them.
 
 
 === Declaring Welcome Files
@@ -126,7 +126,7 @@ Web components are recognizable as classes that extend or implement a class or i
 ==== Declaring Data Source References
 
 If your web application uses data sources, then you can specify it in `web.xml` and use the `@Resource` annotation to inject it into a container-managed object of your web application as a `javax.sql.DataSource` instance.
-The below example specifies a H2 data source listening on JNDI resource name of `java:global/YourDataSourceName`, using the `org.h2.jdbcx.JdbcDataSource` as `javax.sql.DataSource` implementation.
+The below example specifies an H2 data source listening on JNDI resource name of `java:global/YourDataSourceName`, using the `org.h2.jdbcx.JdbcDataSource` as `javax.sql.DataSource` implementation.
 
 [source,xml]
 ----
@@ -166,7 +166,7 @@ Do note that `javax.sql.DataSource` is not part of Jakarta EE but of Java SE and
 ==== Declaring Mail Session References
 
 If your web application uses mail sessions, then you can specify it in `web.xml` and use the `@Resource` annotation to inject it into a container-managed object of your web application as a `jakarta.mail.Session` instance.
-The below example specifies a SMTP mail session listening on JNDI name of `java:global/YourMailSessionName`, using the `smtp.example.com` host to create `jakarta.mail.Session` for.
+The below example specifies an SMTP mail session listening on JNDI name of `java:global/YourMailSessionName`, using the `smtp.example.com` host to create a `jakarta.mail.Session`.
 
 [source,xml]
 ----
