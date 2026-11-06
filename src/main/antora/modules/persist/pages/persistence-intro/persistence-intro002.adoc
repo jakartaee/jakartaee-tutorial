@@ -17,7 +17,7 @@ An entity class must follow these requirements.
 The class may have other constructors.
 
 * The class must not be declared `final`.
-No methods or persistent instance variables must be declared `final`.
+No methods or persistent instance variables may be declared `final`.
 
 * If an entity instance is passed by value as a detached object, such as through a session bean's remote business interface, the class must implement the `Serializable` interface.
 
@@ -455,7 +455,7 @@ Such target entities are considered "orphans," and the `orphanRemoval` attribute
 For example, if an order has many line items and one of them is removed from the order, the removed line item is considered an orphan.
 If `orphanRemoval` is set to `true`, the line item entity will be deleted when the line item is removed from the order.
 
-The `orphanRemoval` attribute in `@OneToMany` and `@oneToOne` takes a Boolean value and is by default false.
+The `orphanRemoval` attribute in `@OneToMany` and `@OneToOne` takes a Boolean value and is by default false.
 
 The following example will cascade the remove operation to the orphaned `order` entity when the `customer` entity is deleted:
 
@@ -493,7 +493,7 @@ This embeddable class is used by the `Address` entity:
 @Entity
 public class Address {
     @Id
-    protected long id
+    protected long id;
     String street1;
     String street2;
     String city;

@@ -57,7 +57,7 @@ The entity that specifies the `@JoinTable` is the owner of the relationship, so 
 Because `roster` uses automatic table creation at deployment time, the container will create a join table named `PERSISTENCE_ROSTER_TEAM_PLAYER`.
 
 `Player` is the inverse, or nonowning, side of the relationship with `Team`.
-As one-to-one and many-to-one relationships, the nonowning side is marked by the `mappedBy` element in the relationship annotation.
+As in one-to-one and many-to-one relationships, the nonowning side is marked by the `mappedBy` element in the relationship annotation.
 Because the relationship between `Player` and `Team` is bidirectional, the choice of which entity is the owner of the relationship is arbitrary.
 
 In `Player.java`, the `@ManyToMany` annotation decorates the `getTeams` method:

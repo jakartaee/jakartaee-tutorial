@@ -202,7 +202,7 @@ The response returned to the client has a URI to the newly created resource.
 The return type is an entity body mapped from the property of the response with the status code specified by the status property of the response.
 The `WebApplicationException` is a `RuntimeException` that is used to wrap the appropriate HTTP error status code, such as 404, 406, 415, or 500.
 
-The `@Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})` and `@Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})` annotations set the request and response media types to use the appropriate MIME client.
+The `@Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})` and `@Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})` annotations set the request and response media types to use the appropriate MIME type.
 These annotations can be applied to a resource method, a resource class, or even an entity provider.
 If you do not use these annotations, Jakarta REST allows the use of any media type (`"\*/*"`).
 

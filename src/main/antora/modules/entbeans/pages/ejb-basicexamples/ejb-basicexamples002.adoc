@@ -18,7 +18,7 @@ The source code for this example is in the `_jakartaee-examples_/tutorial/ejb/ca
 === The Business Interface
 
 The `Cart` business interface is a plain Java interface that defines all the business methods implemented in the bean class.
-If the bean class implements a single interface, that interface is assumed to the business interface.
+If the bean class implements a single interface, that interface is assumed to be the business interface.
 The business interface is a local interface unless it is annotated with the `jakarta.ejb.Remote` annotation; the `jakarta.ejb.Local` annotation is optional in this case.
 
 The bean class may implement more than one interface.

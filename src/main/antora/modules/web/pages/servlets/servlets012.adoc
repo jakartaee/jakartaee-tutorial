@@ -14,7 +14,7 @@ For example, an application may need to query a database or access data from a r
 For example, an application may have to wait for a Jakarta Messaging message, new information from another client, or new data available in a queue before generating the response.
 
 These scenarios represent blocking operations that limit the scalability of web applications.
-Asynchronous processing refers to assigning these blocking operations to a new thread and retuning the thread associated with the request immediately to the container.
+Asynchronous processing refers to assigning these blocking operations to a new thread and returning the thread associated with the request immediately to the container.
 
 === Asynchronous Processing in Servlets
 

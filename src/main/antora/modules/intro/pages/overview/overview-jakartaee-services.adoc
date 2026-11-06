@@ -10,7 +10,7 @@ and messaging, and more.
 <<_service_specification_profile>> lists each high-level service, the specification that provides it, and the profile that contains it:
 
 [[_service_specification_profile]]
-.Services, Specificiations and Profiles
+.Services, Specifications and Profiles
 [cols="1,1,1"]
 |===
 |Service |Specification |Profile

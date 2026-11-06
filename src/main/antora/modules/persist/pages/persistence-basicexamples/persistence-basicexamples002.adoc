@@ -87,7 +87,7 @@ The `PERSISTENCE_ORDER_VENDOR_PART` table's `PARTREVISION` column refers to ``PE
 ==== One-to-Many Relationship Mapped to Overlapping Primary and Foreign Keys
 
 `CustomerOrder` has a field, `lineItems`, that has a one-to-many relationship with ``LineItem``'s field `customerOrder`.
-That is, each order has one or more line item.
+That is, each order has one or more line items.
 
 `LineItem` uses a compound primary key that is made up of the `orderId` and `itemId` fields.
 This compound primary key maps to the `ORDERID` and `ITEMID` columns in the `PERSISTENCE_ORDER_LINEITEM` table.

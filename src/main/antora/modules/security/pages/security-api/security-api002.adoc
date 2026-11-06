@@ -33,7 +33,7 @@ Only the `validateRequest()` method must be implemented by an `HttpAuthenticatio
 
 The following annotations can be used to add additional behaviors to an `HttpAuthenticationMechanism`:
 
-* `AutoApplySession` -- indicates that the Jakarta Authentication `registerSession` functionality should be enabled such that the the caller's authenticated identity is persisted in the caller's servlet session.
+* `AutoApplySession` -- indicates that the Jakarta Authentication `registerSession` functionality should be enabled such that the caller's authenticated identity is persisted in the caller's servlet session.
 
 * `LoginToContinue` -- mechanism to specify properties for FORM login -- login page, error page, etc.
 The built-in FORM authentication mechanisms use LoginToContinue to configure the necessary parameters.

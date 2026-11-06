@@ -21,7 +21,7 @@ Next we'll define the security constraints in `web.xml`, which tell the security
 </web-app>
 ----
 
-This XML essentially says that to access any URL that starts with "/rest" requires the caller to have the role "user". Roles are opaque strings; merely identifiers. It's fully up to the application how broad or fine-grained they are.
+This XML essentially says that to access any URL that starts with "/rest" requires the caller to have the role "user". Roles are opaque strings, merely identifiers. It's fully up to the application how broad or fine-grained they are.
 
 NOTE: In Jakarta EE, internally these XML constraints are transformed into `Permission` instances and made available via a specific type of permission store. Knowledge about this transformation is only needed for very advanced use cases.
 

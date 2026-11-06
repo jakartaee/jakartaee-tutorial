@@ -4,7 +4,7 @@ The `async` example demonstrates how to define an asynchronous business method o
 This example contains two modules.
 
 * A web application (`async-war`) that contains a stateless session bean and a Jakarta Faces interface.
-The `MailerBean` stateless session bean defines an asynchronous method, `sendMessage`, which uses the Jakarta Mail API to send an email to an specified email address.
+The `MailerBean` stateless session bean defines an asynchronous method, `sendMessage`, which uses the Jakarta Mail API to send an email to a specified email address.
 
 * An auxiliary Java SE program (`async-smtpd`) that simulates an SMTP server.
 This program listens on TCP port 3025 for SMTP requests and prints the email messages to the standard output (instead of delivering them).
@@ -68,7 +68,7 @@ public class MailerBean {
 The injected Jakarta Mail resource can be configured through the GlassFish Server Administration Console, through a GlassFish Server administrative command, or through a resource configuration file packaged with the application.
 The resource configuration can be modified at runtime by the GlassFish Server administrator to use a different mail server or transport protocol.
 
-The web client consists of a Facelets template, `template.xhtml`; two Facelets clients, `index.xhtml` and `response.xhtml`.
+The web client consists of a Facelets template, `template.xhtml`, and two Facelets clients, `index.xhtml` and `response.xhtml`.
 The `index.xhtml` file contains a form for the target email address.
 When the user submits the form, the method is called that uses an injected instance of the `MailerBean` session bean to call `MailerBean.sendMessage`.
 The result is sent to the `response.xhtml` Facelets view.
@@ -94,7 +94,7 @@ jakartaee-examples/tutorial/ejb
 . In the *Projects* tab, right-click the `async-smtpd` project and select *Run*.
 +
 The SMTP server simulator starts accepting connections.
-The async-smptd output tab shows the following message:
+The async-smtpd output tab shows the following message:
 +
 ----
 [Test SMTP server listening on port 3025]
@@ -113,7 +113,7 @@ http://localhost:8080/async-war
 . In the web browser window, enter an email address and click Send email.
 +
 The `MailerBean` stateless bean uses the Jakarta Mail API to deliver an email to the SMTP server simulator.
-The async-smptd output window in NetBeans IDE shows the resulting email message, including its headers.
+The async-smtpd output window in NetBeans IDE shows the resulting email message, including its headers.
 
 . To stop the SMTP server simulator, click the X button on the right side of the status bar in NetBeans IDE.
 
@@ -142,7 +142,7 @@ jakartaee-examples/tutorial/ejb/async/async-smtpd/
 mvn install
 ----
 
-. Enter the following command to start the STMP server simulator:
+. Enter the following command to start the SMTP server simulator:
 +
 [source,shell]
 ----
@@ -181,7 +181,7 @@ http://localhost:8080/async-war
 The `MailerBean` stateless bean uses the Jakarta Mail API to deliver an email to the SMTP server simulator.
 The resulting email message appears on the first terminal window, including its headers.
 
-. To stop the SMTP server simulator, close the terminal window in which you issued the command to start the STMP server simulator.
+. To stop the SMTP server simulator, close the terminal window in which you issued the command to start the SMTP server simulator.
 
 . To delete the Jakarta Mail session resource, type the following command:
 +

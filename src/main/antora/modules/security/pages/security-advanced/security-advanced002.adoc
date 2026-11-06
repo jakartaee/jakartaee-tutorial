@@ -66,7 +66,7 @@ In user name/password-based mutual authentication, the following actions occur.
 
 . If successful, the client sends its user name and password to the server.
 
-. The server verifies the client's credentials
+. The server verifies the client's credentials.
 
 . If the verification is successful, the server grants access to the protected resource requested by the client.
 

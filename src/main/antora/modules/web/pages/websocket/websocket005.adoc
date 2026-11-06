@@ -10,7 +10,7 @@ Follow these steps to send messages in an endpoint.
 
 . Obtain the `Session` object from the connection.
 +
-The `Session` object is available as a parameter in the annotated lifecycle methods of the endpoint, like those in xref:websocket/websocket.adoc#_websocket_endpoint_lifecycle_annotations[Websocket Endpoint Lifecycle Annotations].
+The `Session` object is available as a parameter in the annotated lifecycle methods of the endpoint, like those in xref:websocket/websocket.adoc#_websocket_endpoint_lifecycle_annotations[WebSocket Endpoint Lifecycle Annotations].
 When your message is a response to a message from the peer, you have the `Session` object available inside the method that received the message (the method annotated with `@OnMessage`).
 If you have to send messages that are not responses, store the `Session` object as an instance variable of the endpoint class in the method annotated with `@OnOpen` so that you can access it from other methods.
 
@@ -36,7 +36,7 @@ This method blocks until the whole message has been transmitted.
 
 * `void RemoteEndpoint.sendPing(ByteBuffer appData)`
 +
-end a ping frame to the peer.
+Send a ping frame to the peer.
 
 * `void RemoteEndpoint.sendPong(ByteBuffer appData)`
 +

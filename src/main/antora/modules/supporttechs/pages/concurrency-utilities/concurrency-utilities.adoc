@@ -2,7 +2,7 @@
 
 include::ROOT:partial$last-updated-v9.adoc[]
 
-This chapter describes Jakarta Concurrency spec.
+This chapter describes the Jakarta Concurrency specification.
 
 include::concurrency-utilities001.adoc[]
 

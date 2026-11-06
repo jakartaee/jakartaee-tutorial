@@ -32,7 +32,7 @@ public void reset () {
 
 === To Prepare for the Destruction of a Managed Bean Using the @PreDestroy Annotation
 
-Preparing for the destruction of a managed bean specifies the lifecycle call back method that signals that an application component is about to be destroyed by the container.
+Preparing for the destruction of a managed bean specifies the lifecycle callback method that signals that an application component is about to be destroyed by the container.
 
 . In the managed bean class or any of its superclasses, prepare for the destruction of the managed bean.
 +
