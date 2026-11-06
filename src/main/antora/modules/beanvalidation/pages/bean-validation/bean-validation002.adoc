@@ -78,7 +78,7 @@ Date eventDate;
 ----
 {empty}
 
-|`@FutureOrPresent` |The value of the field or property must be a date or time in present or future. |
+|`@FutureOrPresent` |The value of the field or property must be a date or time in the present or future. |
 
 [source,java]
 ----
@@ -123,7 +123,7 @@ int debtValue;
 ----
 {empty}
 
-|`@NotBlank` |The value of the field or property must contain atleast one non-white space character. |
+|`@NotBlank` |The value of the field or property must contain at least one non-white space character. |
 
 [source,java]
 ----
@@ -249,7 +249,7 @@ public class Name {
 }
 ----
 
-The following example shows a method with a user-defined constraint that checks user-defined constraint that checks for a predefined phone number pattern, such as a country specific phone number:
+The following example shows a method with a user-defined constraint that checks for a predefined phone number pattern, such as a country specific phone number:
 
 [source,java]
 ----
@@ -303,7 +303,7 @@ public @interface CarPool {
 
     /**
      * Defines several @CarPool annotations on the same element
-     * @see (@link CarPool}
+     * @see {@link CarPool}
      */
     @Target({ METHOD, FIELD, ANNOTATION_TYPE, CONSTRUCTOR, PARAMETER, TYPE_USE })
     @Retention(RUNTIME)

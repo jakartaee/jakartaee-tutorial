@@ -32,7 +32,7 @@ Content outside of this tag is ignored.
 
 |`ui:param` |Used to pass parameters to an included file.
 
-|`ui:repeat` a|Used as an alternative for loop tags, such as `c:forEach` or `h:dataTable.`
+|`ui:repeat` a|Used as an alternative for loop tags, such as `c:forEach` or `h:dataTable`.
 
 |`ui:remove` |Removes content from a page.
 |===

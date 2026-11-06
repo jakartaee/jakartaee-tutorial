@@ -2,7 +2,7 @@
 
 include::ROOT:partial$last-updated-v9.adoc[]
 
-The Duke's Bookstore example is a simple e-commerce application that illustrates some of the more advanced features of Jakarta Faces technology in combination with Jakarta Contexts and Dependency Injection (CDI), enterprise beans, and the Jakarta Persistence.
+The Duke's Bookstore example is a simple e-commerce application that illustrates some of the more advanced features of Jakarta Faces technology in combination with Jakarta Contexts and Dependency Injection (CDI), enterprise beans, and Jakarta Persistence.
 Users can select books from an image map, view the bookstore catalog, and purchase books.
 No security is used in this application.
 

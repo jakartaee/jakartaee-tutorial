@@ -23,8 +23,8 @@ The conversation scope exists within developer-controlled boundaries that extend
 All long-running conversations are scoped to a particular HTTP servlet session and may not cross session boundaries.
 |===
 
-The first three scopes are defined by both Jakarta Context and Dependency Injection and the Jakarta Faces specification.
-The last two are defined by Jakarta Context and Dependency Injection.
+The first three scopes are defined by both Jakarta Contexts and Dependency Injection and the Jakarta Faces specification.
+The last two are defined by Jakarta Contexts and Dependency Injection.
 
 All predefined scopes except `@Dependent` are contextual scopes.
 CDI places beans of contextual scope in the context whose lifecycle is defined by the Jakarta EE specifications.

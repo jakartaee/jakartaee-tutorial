@@ -701,7 +701,7 @@ An `IN` expression determines whether a string belongs to a set of string litera
 The path expression must have a string or numeric value.
 If the path expression has a `NULL` value, the value of the `IN` expression is unknown.
 
-In the following example, the expression is `TRUE` if the country is `UK` , but `FALSE` if the country is `Peru`:
+In the following example, the expression is `TRUE` if the country is `UK`, but `FALSE` if the country is `Peru`:
 
 [source,sql]
 ----
@@ -729,7 +729,7 @@ The `ESCAPE` clause specifies an escape character for the wildcard characters in
 
 [[_like_expression_examples]]
 .LIKE Expression Examples
-[width=75%",cols="35%,20%,20%"]
+[width="75%",cols="35%,20%,20%"]
 |===
 |Expression |TRUE |FALSE
 
@@ -1171,7 +1171,7 @@ If a query returns a `java.util.Collection`, which allows duplicates, you must s
 Constructor expressions allow you to return Java instances that store a query result element instead of an `Object[]`.
 
 The following query creates a `CustomerDetail` instance per `Customer` matching the `WHERE` clause.
-A `CustomerDetail` stores the customer name and customer's country name.So the query returns a `List` of `CustomerDetail` instances:
+A `CustomerDetail` stores the customer name and customer's country name. So the query returns a `List` of `CustomerDetail` instances:
 
 [source,sql]
 ----

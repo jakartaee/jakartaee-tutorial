@@ -189,7 +189,7 @@ Future<Customer> fCustomer = myResource.request(MediaType.TEXT_PLAIN)
 Using custom callbacks in asynchronous invocations is easy in simple cases and when there are many independent calls to make.
 In nested calls, using custom callbacks becomes very difficult to implement, debug, and maintain.
 
-Jakarta REST defines a new type of invoker called as `RxInvoker` and a default implementation of this type is `CompletionStageRxInvoker`.
+Jakarta REST defines a new type of invoker called `RxInvoker` and a default implementation of this type is `CompletionStageRxInvoker`.
 The new `rx` method is used as in the following example:
 
 [source,java]
@@ -207,7 +207,7 @@ The `CompletionStage` that is returned can then be used only to retrieve the res
 
 Server-sent Events (SSE) technology is used to asynchronously push notifications to the client over standard HTTP or HTTPS protocol.
 Clients can subscribe to event notifications that originate on a server.
-Server generates events and sends these events back to the clients that are subscribed to receive the notifications.
+The server generates events and sends these events back to the clients that are subscribed to receive the notifications.
 The one-way communication channel connection is established by the client.
 Once the connection is established, the server sends events to the client whenever new data is available.
 
@@ -236,7 +236,7 @@ public void eventStream(@Context SseEventSink eventSink, @Context Sse sse) {
 }
 ----
 
-The `SseEventsink` is injected into the resource method and the underlying client connection is kept open and used to send events.
+The `SseEventSink` is injected into the resource method and the underlying client connection is kept open and used to send events.
 The connection persists until the client disconnects from the server.
 The method `send` returns an instance of `CompletionStage<T>` which indicates the action of asynchronously sending a message to a client is enabled.
 
@@ -246,8 +246,8 @@ The events that are streamed to the clients can be defined with the details such
 
 Broadcasting is the action of sending events to multiple clients simultaneously.
 Jakarta REST SSE API provides `SseBroadcaster` to register all `SseEventSink` instances and send events to all registered event outputs.
-The life-cycle and scope of an `SseBroadcaster` is fully controlled by applications and not the Jakarta REST runtime.
-The following example show the use of broadcasters:
+The life-cycle and scope of an `SseBroadcaster` are fully controlled by applications and not the Jakarta REST runtime.
+The following example shows the use of broadcasters:
 
 [source,java]
 ----
@@ -281,7 +281,7 @@ public class SseResource {
 }
 ----
 
-`@Singleton` annotation is defined for the resource class restricting the creation of multiple instances of the class.
+The `@Singleton` annotation is defined for the resource class restricting the creation of multiple instances of the class.
 The `register` method on a broadcaster is used to add a new `SseEventSink`; the `broadcast` method is used to send an SSE event to all registered clients.
 
 === Listening and Receiving Events

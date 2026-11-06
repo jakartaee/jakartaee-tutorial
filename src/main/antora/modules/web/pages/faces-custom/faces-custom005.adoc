@@ -147,7 +147,7 @@ The encoding methods convert the current local value of the component into the c
 
 The `UIComponentBase` class defines a set of methods for rendering markup: `encodeBegin`, `encodeChildren`, and `encodeEnd`.
 If the component has child components, you might need to use more than one of these methods to render the component; otherwise, all rendering should be done in `encodeEnd`.
-Alternatively, you can use the `encodeALL` method, which encompasses all the methods.
+Alternatively, you can use the `encodeAll` method, which encompasses all the methods.
 
 Because `MapComponent` is a parent component of `AreaComponent`, the `area` tags must be rendered after the beginning `map` tag and before the ending `map` tag.
 To accomplish this, the `MapRenderer` class renders the beginning `map` tag in `encodeBegin` and the rest of the `map` tag in `encodeEnd`.

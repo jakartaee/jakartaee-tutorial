@@ -13,7 +13,7 @@ WebSocket endpoints are instances of the `jakarta.websocket.Endpoint` class.
 Jakarta WebSocket enables you to create two kinds of endpoints: programmatic endpoints and annotated endpoints.
 To create a programmatic endpoint, you extend the `Endpoint` class and override its lifecycle methods.
 To create an annotated endpoint, you decorate a Java class and some of its methods with the annotations provided by the packages mentioned previously.
-After you have created an endpoint, you deploy it to an specific URI in the application so that remote clients can connect to it.
+After you have created an endpoint, you deploy it to a specific URI in the application so that remote clients can connect to it.
 
 [NOTE]
 In most cases, it is easier to create and deploy an annotated endpoint than a programmatic endpoint.

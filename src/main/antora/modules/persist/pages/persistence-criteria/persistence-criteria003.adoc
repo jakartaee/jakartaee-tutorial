@@ -252,9 +252,9 @@ Root<Pet> pet = cq.from(Pet.class);
 cq.where(cb.like(pet.get(Pet_.name), "*do"));
 ----
 
-To specify multiple conditional predicates, use the compound predicate methods of the `CriteriaBuilder` interface, as shown in <<_compound_predicate_methods_in_the_criteriabuildder_interface>>.
+To specify multiple conditional predicates, use the compound predicate methods of the `CriteriaBuilder` interface, as shown in <<_compound_predicate_methods_in_the_criteriabuilder_interface>>.
 
-[[_compound_predicate_methods_in_the_criteriabuildder_interface]]
+[[_compound_predicate_methods_in_the_criteriabuilder_interface]]
 .Compound Predicate Methods in the CriteriaBuilder Interface
 [width="50%",cols="15%,35%"]
 |===

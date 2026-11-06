@@ -164,7 +164,7 @@ Lifecycle interceptors may throw runtime exceptions but cannot throw checked exc
 
 Lifecycle interceptor methods are called in an unspecified security and transaction context.
 That is, portable Jakarta EE applications should not assume the lifecycle event interceptor method has access to a security or transaction context.
-Only one interceptor method for each lifecycle event (post-create and pre-destroy) is allowed per class.
+Only one interceptor method for each lifecycle event (post-construct and pre-destroy) is allowed per class.
 
 ==== Using AroundConstruct Interceptor Methods
 
@@ -173,16 +173,16 @@ Methods decorated with `@AroundConstruct` may only be defined within interceptor
 You may not use `@AroundConstruct` methods within the target class.
 
 The `@AroundConstruct` method is called after dependency injection has been completed for all interceptors associated with the target class.
-The target class is created and the target class's constructor injection is performed after all associated `@AroundConstruct` methods have called the `Invocation.proceed` method.
+The target class is created and the target class's constructor injection is performed after all associated `@AroundConstruct` methods have called the `InvocationContext.proceed` method.
 At that point, dependency injection for the target class is completed, and then any `@PostConstruct` callback methods are invoked.
 
-`@AroundConstruct` methods can access the constructed target instance after calling `Invocation.proceed` by calling the `InvocationContext.getTarget` method.
+`@AroundConstruct` methods can access the constructed target instance after calling `InvocationContext.proceed` by calling the `InvocationContext.getTarget` method.
 
 [CAUTION]
 Calling methods on the target instance from an `@AroundConstruct` method is dangerous because dependency injection may not have completed on the target instance.
 
-`@AroundConstruct` methods must call `Invocation.proceed` in order to create the target instance.
-If an `@AroundConstruct` method does not call `Invocation.proceed`, the target instance will not be created.
+`@AroundConstruct` methods must call `InvocationContext.proceed` in order to create the target instance.
+If an `@AroundConstruct` method does not call `InvocationContext.proceed`, the target instance will not be created.
 
 ==== Using Multiple Lifecycle Callback Interceptors
 

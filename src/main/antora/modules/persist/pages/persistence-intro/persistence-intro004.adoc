@@ -217,9 +217,9 @@ The JAR file or directory whose `META-INF` directory contains `persistence.xml` 
 The scope of the persistence unit is determined by the persistence unit's root.
 Each persistence unit must be identified with a name that is unique to the persistence unit's scope.
 
-Persistent units can be packaged as part of a WAR or enterprise bean JAR file or can be packaged as a JAR file that can then be included in an WAR or EAR file.
+Persistence units can be packaged as part of a WAR or enterprise bean JAR file or can be packaged as a JAR file that can then be included in a WAR or EAR file.
 
-* If you package the persistent unit as a set of classes in an enterprise bean JAR file, `persistence.xml` should be put in the enterprise bean JAR's `META-INF` directory.
+* If you package the persistence unit as a set of classes in an enterprise bean JAR file, `persistence.xml` should be put in the enterprise bean JAR's `META-INF` directory.
 
 * If you package the persistence unit as a set of classes in a WAR file, `persistence.xml` should be located in the WAR file's `WEB-INF/classes/META-INF` directory.
 

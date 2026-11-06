@@ -12,7 +12,7 @@ Jakarta EE supports the following components:
 * Business components implement logic necessary to support the business domain using either *Enterprise bean components (enterprise beans)*{empty}footnote:[Enterprise Beans previously supported persistence via Entity Beans, but that has been deprecated in favor of Jakarta Persistence] or CDI managed beans.
 ** For new applications, business components should be implemented using CDI managed beans,
 unless you need Enterprise bean-specific features such as transactions, role-based security,
-messaging driven beans, or remote execution.
+message-driven beans, or remote execution.
 The two technologies play well together.
 
 All of these components run on the *server{empty}footnote:[Application Clients are

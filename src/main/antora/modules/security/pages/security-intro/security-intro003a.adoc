@@ -16,7 +16,7 @@ The details of how messages are secured and validated are undefined by the model
 Authentication defines two "profiles" for integrating Authentication auth modules into Jakarta EE containers: the Servlet Container Profile, and the SOAP Profile.
 Each specifies how Authentication message processing must be integrated into the request processing flow of the container in question to validate incoming requests and secure outgoing responses.
 
-In the case of the Servlet Container Profile, if a `ServerAuthModule` is configured/available for a given application context, then the modules's `validateRequest()` method must be invoked (and succeed) before authorizing access and calling the target servlet, and the module's `secureResponse()` method must be called before returning a response.
+In the case of the Servlet Container Profile, if a `ServerAuthModule` is configured/available for a given application context, then the module's `validateRequest()` method must be invoked (and succeed) before authorizing access and calling the target servlet, and the module's `secureResponse()` method must be called before returning a response.
 Typically, a `ServerAuthModule` written for the Servlet Container Profile looks for user credentials or tokens in an incoming request, and then uses them to authenticate the caller and establish the caller's identity.
 A `ServerAuthModule` may also engage in a challenge/response protocol with the client, or negotiate with a third party to establish/verify the client's identity.
 
@@ -32,7 +32,7 @@ An `AuthConfigProvider` makes a `ServerAuthModule` available to the container, v
 Jakarta Security defines the following authentication-related plugin SPIs:
 
 * `HttpAuthenticationMechanism` - An interface for modules that authenticate callers to a web application.
-It defines three methods that correspond to the methods of a Authentication `ServerAuthModule`, albeit with slightly different signatures.
+It defines three methods that correspond to the methods of an Authentication `ServerAuthModule`, albeit with slightly different signatures.
 An `HttpAuthenticationMechanism` provides similar functionality to a `ServerAuthModule`, and the Servlet Container uses a special `ServerAuthModule` to invoke the HttpAuthenticationMechanism's methods, but HttpAuthenticationMechanisms are simpler to write, and to deploy, than are ServerAuthModules.
 
 * `IdentityStore` - This interface defines methods for validating a caller's credentials (such as username and password) and returning group membership information.

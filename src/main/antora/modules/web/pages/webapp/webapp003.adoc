@@ -1,7 +1,7 @@
 == Hello World Web Application Using Jakarta Faces
 
-The `hello-faces` application is a web application that uses Jakarta Faces take a name as an HTTP request parameter, generate the greeting and return it as an HTTP response.
-As a presentation-oriented web application, the response is represented as a HTML document.
+The `hello-faces` application is a web application that uses Jakarta Faces to take a name as an HTTP request parameter, generate the greeting and return it as an HTTP response.
+As a presentation-oriented web application, the response is represented as an HTML document.
 
 The source code for this application is in the `_jakartaee-examples_/tutorial/web/faces/hello-faces/` directory.
 
@@ -61,10 +61,10 @@ We'll briefly go through the CDI annotations that are used here:
 
 === The View
 
-In a typical Jakarta Faces application, the view (the "V" part of MVC) is represented by a XHTML file.
-Such a XHTML file is in the Jakarta Faces world called a _Facelets File_ or just _Facelet_.
+In a typical Jakarta Faces application, the view (the "V" part of MVC) is represented by an XHTML file.
+Such an XHTML file is in the Jakarta Faces world called a _Facelets File_ or just _Facelet_.
 In Jakarta Faces, the view technology is pluggable and Facelets is used as the default view technology.
-XHTML markup is being used because it allows the framework to easily use a XML parser to find Jakarta Faces tags of interest and to generate HTML output.
+XHTML markup is being used because it allows the framework to easily use an XML parser to find Jakarta Faces tags of interest and to generate HTML output.
 
 For this Hello World web application, the `src/main/webapp/hello.xhtml` Facelet defines a form with an input field, a command button and an output field.
 
@@ -106,7 +106,7 @@ We'll briefly go through the Jakarta Faces-specific XHTML tags that are used her
 * `<h:messages>` -- generates the HTML `<ul>` or `<div>` or `<table>` depending on state and configuration.
   It gives you the opportunity to declare the place where any conversion and validation messages will be displayed.
 * `<f:ajax>` -- generates the necessary JavaScript code for Ajax behavior.
-  If gives you the opportunity to configure the form submit to be performed asynchronously using Ajax.
+  It gives you the opportunity to configure the form submit to be performed asynchronously using Ajax.
 * `<h:outputText>` -- generates the HTML `<span>`.
   This is the one being updated on completion of the Ajax submit and it will display the current value of the managed bean property specified in the `value` attribute.
 

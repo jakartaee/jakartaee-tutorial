@@ -9,7 +9,7 @@ The most reliable way to produce a message is to send a `PERSISTENT` message, an
 Jakarta Messaging messages are `PERSISTENT` by default; `PERSISTENT` messages will not be lost in the event of Messaging provider failure.
 For details, see <<_specifying_message_persistence>>.
 
-Transactions allow multiple messages to be sent or received in an atomic operation.In the Jakarta EE platform they also allow message sends and receives to be combined with database reads and writes in an atomic transaction.
+Transactions allow multiple messages to be sent or received in an atomic operation. In the Jakarta EE platform they also allow message sends and receives to be combined with database reads and writes in an atomic transaction.
 A transaction is a unit of work into which you can group a series of operations, such as message sends and receives, so that the operations either all succeed or all fail.
 For details, see <<_using_jakarta_messaging_local_transactions>>.
 
@@ -73,7 +73,7 @@ The provider also retains unacknowledged messages if an application closes a `JM
 Unacknowledged messages that have been received from a nondurable subscription will be dropped when the `JMSContext` is closed.
 
 If you use a queue or a durable subscription, you can use the `JMSContext.recover` method to stop a nontransacted `JMSContext` and restart it with its first unacknowledged message.
-In effect, the ``JMSContext``'s series of delivered messages is reset to the point after its last acknowledged message.
+In effect, the `JMSContext`'s series of delivered messages is reset to the point after its last acknowledged message.
 The messages it now delivers may be different from those that were originally delivered, if messages have expired or if higher-priority messages have arrived.
 For a consumer on a nondurable subscription, the provider may drop unacknowledged messages when the `JMSContext.recover` method is called.
 

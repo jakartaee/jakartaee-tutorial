@@ -102,7 +102,7 @@ public class LogLine {
 }
 ----
 
-The `LogFileteredLine` class is similar to this class but only has two fields: the IP address of the client and the URL.
+The `LogFilteredLine` class is similar to this class but only has two fields: the IP address of the client and the URL.
 
 ==== The Chunk Step Batch Artifacts
 

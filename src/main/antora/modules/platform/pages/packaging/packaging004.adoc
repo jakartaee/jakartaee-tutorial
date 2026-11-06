@@ -4,7 +4,7 @@ A Resource Adapter Archive (RAR) file stores XML files, Java classes, and other 
 A resource adapter can be deployed on any Jakarta EE server, much like a Jakarta EE application.
 A RAR file can be contained in an Enterprise Archive (EAR) file, or it can exist as a separate file.
 
-The RAR file contains
+The RAR file contains:
 
 * A JAR file with the implementation classes of the resource adapter
 
