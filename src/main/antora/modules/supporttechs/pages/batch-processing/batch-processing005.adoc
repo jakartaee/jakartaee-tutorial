@@ -27,7 +27,7 @@ It is referenced from the `batchlet` element.
 |`jakarta.batch.api` |`Decider` |Decides the next step, flow, or split to execute based on information from the execution of the previous step, flow, or split.
 It is referenced from the `decision` element.
 
-|`jakarta.batch.api.chunk` |`CheckPointAlgorithm` |Implements a custom checkpoint policy for chunk steps.
+|`jakarta.batch.api.chunk` |`CheckpointAlgorithm` |Implements a custom checkpoint policy for chunk steps.
 It is referenced from the `checkpoint-algorithm` element inside the `chunk` element.
 
 |`jakarta.batch.api.chunk` |`ItemReader` |Reads items from an input source in a chunk step.
@@ -72,7 +72,7 @@ It is referenced from the `analyzer` element inside the `partition` element.
 It is referenced from the `listener` element inside the `job` element.
 
 |`jakarta.batch.api.listener` |`StepListener` |Intercepts step execution before and after running a step.
-It is referenced from the `listener` element inside the `step` element
+It is referenced from the `listener` element inside the `step` element.
 
 |`jakarta.batch.api.chunk.listener` |`ChunkListener` |Intercepts chunk processing in chunk steps before and after processing each chunk, and on errors.
 It is referenced from the `listener` element inside the `step` element.

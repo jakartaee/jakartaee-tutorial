@@ -10,7 +10,7 @@ The primary components of the concurrency utilities are as follows.
 Tasks are executed on threads that are started and managed by the container.
 The context of the container is propagated to the thread executing the task.
 +
-For example, by using an `ManagedExecutorService.submit()` call, a task, such as the GenerateReportTask, could be submitted to execute at a later time and then, by using the `Future` object callback, retrieve the result when it becomes available.
+For example, by using a `ManagedExecutorService.submit()` call, a task, such as the GenerateReportTask, could be submitted to execute at a later time and then, by using the `Future` object callback, retrieve the result when it becomes available.
 
 * `ManagedScheduledExecutorService`: A managed scheduled executor service is used by applications to execute submitted tasks asynchronously at specific times.
 Tasks are executed on threads that are started and managed by the container.
