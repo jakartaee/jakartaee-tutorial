@@ -114,7 +114,7 @@ If the second-level cache has been disabled, calls to the `Cache` interface's me
 
 To find out whether a given entity is currently in the second-level cache:
 
-. Call the `Cache.contains` method .
+. Call the `Cache.contains` method.
 The `contains` method returns `true` if the entity's data is cached, and `false` if the data is not in the cache:
 +
 [source,java]

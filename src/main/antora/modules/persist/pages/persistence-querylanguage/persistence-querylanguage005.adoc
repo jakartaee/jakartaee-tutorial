@@ -66,7 +66,7 @@ The first input parameter is `:position`, the second is `:name`.
 
 In the query language, an expression can traverse, or navigate, to related entities.
 These expressions are the primary difference between the Jakarta Persistence query language and SQL.
-Queries navigates to related entities, whereas SQL joins tables.
+Queries navigate to related entities, whereas SQL joins tables.
 
 ==== A Simple Query with Relationships
 
