@@ -2,7 +2,7 @@
 
 This section shows how to create, package, and run simple Messaging clients that are packaged as application clients.
 
-=== Overview of Writing Simple Jakarta Messaging Application
+=== Overview of Writing Simple Jakarta Messaging Applications
 
 The clients demonstrate the basic tasks a Jakarta Messaging application must perform:
 

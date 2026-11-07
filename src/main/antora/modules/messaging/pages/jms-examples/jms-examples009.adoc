@@ -71,7 +71,7 @@ The application client, `HumanResourceClient.java`, found under `clientmdbentity
 
 . Creates a `TemporaryQueue` to receive notification of processing that occurs, based on new-hire events it has published
 
-. Creates a `JMSConsumer` for the `TemporaryQueue`, sets the ``JMSConsumer``'s message listener, and starts the connection
+. Creates a `JMSConsumer` for the `TemporaryQueue`, sets the `JMSConsumer`'s message listener, and starts the connection
 
 . Creates a `MapMessage`
 
@@ -94,7 +94,7 @@ The beans take the following steps.
 . They inject a `MessageDrivenContext` resource, an `EntityManager`, and a `JMSContext`.
 
 . The `onMessage` method retrieves the information in the message.
-The ``EquipmentMDB``'s `onMessage` method chooses equipment, based on the new hire's position; the ``OfficeMDB``'s `onMessage` method randomly generates an office number.
+The `EquipmentMDB`'s `onMessage` method chooses equipment, based on the new hire's position; the `OfficeMDB`'s `onMessage` method randomly generates an office number.
 
 . After a slight delay to simulate real world processing hitches, the `onMessage` method calls a helper method, `compose`.
 
