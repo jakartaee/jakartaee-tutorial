@@ -47,7 +47,7 @@ This section explains how to use each of the component tags shown in <<_the_comp
 
 |`h:panelGrid` |Displays a table |An HTML `<table>` element with `<tr>` and `<td>` elements |A table
 
-|`h:panelGroup` |Groups a set of components under one parent |A HTML `<div>` or `<span>` element |A row in a table
+|`h:panelGroup` |Groups a set of components under one parent |An HTML `<div>` or `<span>` element |A row in a table
 
 |`h:selectBooleanCheckbox` |Allows a user to change the value of a Boolean choice |An HTML `<input type="checkbox">` element |A check box
 
@@ -67,7 +67,7 @@ For a standalone radio button, use the `group` attribute.
 |===
 
 The tags correspond to components in the `jakarta.faces.component` package.
-The components are discussed in more detail in xref:faces-develop/faces-develop.adoc#_developing_with_jakarta_faces_technology[Developing with Jakarta Faces Technology]
+The components are discussed in more detail in xref:faces-develop/faces-develop.adoc#_developing_with_jakarta_faces_technology[Developing with Jakarta Faces Technology].
 
 The next section explains the important attributes that are common to most component tags.
 For each of the components discussed in the following sections, xref:faces-develop/faces-develop.adoc#_writing_bean_properties[Writing Bean Properties] explains how to write a bean property bound to that particular component or its value.
@@ -707,7 +707,7 @@ Because the `h:panelGrid` tag specifies a `headerClass`, the `h:panelGrid` tag m
 The example `h:panelGrid` tag uses an `f:facet` tag for the header.
 Facets can have only one child, so an `h:panelGroup` tag is needed if you want to group more than one component within an `f:facet`.
 The example `h:panelGrid` tag has only one cell of data, so an `h:panelGroup` tag is not needed.
-(For more information about facets, see <<_using_data_bound_table_components>>.
+For more information about facets, see <<_using_data_bound_table_components>>.
 
 The `h:panelGroup` tag has an attribute, `layout`, in addition to those listed in <<_common_component_tag_attributes>>.
 If the `layout` attribute has the value `block`, an HTML `div` element is rendered to enclose the row; otherwise, an HTML `span` element is rendered to enclose the row.

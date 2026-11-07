@@ -45,7 +45,7 @@ mvn install
 http://localhost:8080/jsonbbasics/
 ----
 
-. Enter data on form and click Serialize to JSON to submit the form.
+. Enter data on the form and click Serialize to JSON to submit the form.
 The following page shows the JSON format of the object data.
 
 . Click Deserialize JSON.

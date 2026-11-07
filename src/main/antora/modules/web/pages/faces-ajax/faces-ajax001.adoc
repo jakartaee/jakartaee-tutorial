@@ -23,7 +23,7 @@ This tutorial does not focus on the response formats.
 
 Ajax enables asynchronous and partial updating of web applications.
 Such functionality allows for highly responsive web pages that are rendered in near real time.
-Ajax-based web applications can access server and process information and can also retrieve data without interfering with the display and rendering of the current web page on a client (such as a browser).
+Ajax-based web applications can access the server and process information and can also retrieve data without interfering with the display and rendering of the current web page on a client (such as a browser).
 
 Some of the advantages of using Ajax are as follows:
 

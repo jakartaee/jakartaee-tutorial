@@ -19,7 +19,7 @@ The following steps summarize how to use nonblocking I/O to process requests and
 
 . Process the request and the response inside the listener's callback methods.
 
-<<_nonblocking_io_support_in_servletoutputstream>> describe the methods available in the servlet input and output streams for nonblocking I/O support.
+<<_nonblocking_io_support_in_servletoutputstream>> describes the methods available in the servlet input and output streams for nonblocking I/O support.
 <<_listener_interfaces_for_nonblocking_io_support>> describes the interfaces for read listeners and write listeners.
 
 [[_nonblocking_io_support_in_servletinputstream]]
