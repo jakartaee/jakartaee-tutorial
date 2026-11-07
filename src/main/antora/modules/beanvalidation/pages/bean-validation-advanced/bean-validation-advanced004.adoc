@@ -45,7 +45,7 @@ public class Employee extends Person {
 ----
 
 In this example, the `Employee.getPhone` method removes the `@Verified` constraint on the return value.
-Return values that would be not pass validation when calling `Person.getEmail` are allowed when calling `Employee.getPhone`.
+Return values that would not pass validation when calling `Person.getPhone` are allowed when calling `Employee.getPhone`.
 This is called weakening the postconditions (that is, return values) of a subtype.
 You may not weaken the postconditions of a subtype method call.
 
