@@ -197,7 +197,7 @@ public class StatusSingletonBean { ... }
 
 Singletons that use bean-managed concurrency allow full concurrent access to all the business and timeout methods in the singleton.
 The developer of the singleton is responsible for ensuring that the state of the singleton is synchronized across all clients.
-Developers who create singletons with bean-managed concurrency are allowed to use the Java programming language synchronization primitives, such as `synchronization` and `volatile`, to prevent errors during concurrent access.
+Developers who create singletons with bean-managed concurrency are allowed to use the Java programming language synchronization primitives, such as `synchronized` and `volatile`, to prevent errors during concurrent access.
 
 Add a `@ConcurrencyManagement` annotation with the type set to `ConcurrencyManagementType.BEAN` at the class level of the singleton to specify bean-managed concurrency:
 

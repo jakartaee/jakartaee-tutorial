@@ -190,7 +190,7 @@ To create a timer, the bean invokes one of the `create` methods of the `TimerSer
 These methods allow single-action, interval, or calendar-based timers to be created.
 
 For single-action or interval timers, the expiration of the timer can be expressed as either a duration or an absolute time.
-The duration is expressed as a the number of milliseconds before a timeout event is triggered.
+The duration is expressed as the number of milliseconds before a timeout event is triggered.
 To specify an absolute time, create a `java.util.Date` object and pass it to the `TimerService.createSingleActionTimer` or the `TimerService.createTimer` method.
 
 The following code sets a programmatic timer that will expire in 1 minute (60,000 milliseconds):
