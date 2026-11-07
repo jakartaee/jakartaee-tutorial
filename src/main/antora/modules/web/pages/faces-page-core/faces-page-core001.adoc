@@ -189,7 +189,7 @@ If no value is specified, `default` is used.
 |`timeZone` |`String` or `TimeZone` a|Time zone in which to interpret any time information in the `date` string.
 
 |`type` |`String` a| Specifies whether the string value will contain a date, a time, or both.
-Valid values are: `date`, `time`, `both`, `LocalDate`, `LocalTime`, `LocalDateTime`, `OffsetTime`, `OffsetDateTime`, or `ZonedDateTime`.
+Valid values are: `date`, `time`, `both`, `localDate`, `localTime`, `localDateTime`, `offsetTime`, `offsetDateTime`, or `zonedDateTime`.
 If no value is specified, `date` is used.
 
 See <<_type_attribute_and_default_pattern_values>> for additional information.
