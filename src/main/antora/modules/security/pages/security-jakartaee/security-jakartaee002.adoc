@@ -73,9 +73,9 @@ After method permissions are defined, user name/password authentication will be 
 
 It is important to keep in mind that security roles are used to define the logical security view of an application.
 They should not be confused with the user groups, users, principals, and other concepts that exist in GlassFish Server.
-Note that the Jakarta Security requires that group principal names be mapped to roles of the same name by default, but that implementations of the standard may allow configuration of a different default.
+Note that Jakarta Security requires that group principal names be mapped to roles of the same name by default, but that implementations of the standard may allow configuration of a different default.
 In GlassFish Server, you do not need to perform any additional steps to map the roles defined in the application to users, groups, and principals that are the components of the user database in the `file` realm.
-This mapping is set by default in the GlassFish Server Administration Console as described in xref:security-intro/security-intro.adoc#_mapping_roles_to_users_and_groups[Mapping Roles to Users and Groups]>.
+This mapping is set by default in the GlassFish Server Administration Console as described in xref:security-intro/security-intro.adoc#_mapping_roles_to_users_and_groups[Mapping Roles to Users and Groups].
 
 The following sections show how an application developer uses declarative security to either secure an application or to create a security view to pass along to the deployer.
 
@@ -306,7 +306,7 @@ public class EmployeeServiceBean implements EmployeeService {
 ----
 +
 In this example, the enterprise bean obtains the principal name of the current caller and uses it as the primary key to locate an `EmployeeRecord` entity.
-This example assumes that application has been deployed such that the current caller principal contains the primary key used for the identification of employees (for example, employee number).
+This example assumes that the application has been deployed such that the current caller principal contains the primary key used for the identification of employees (for example, employee number).
 
 * `isCallerInRole` allows the developer to code the security checks that cannot be easily defined using method permissions.
 Such a check might impose a role-based limit on a request, or it might depend on information stored in the database.
