@@ -6,7 +6,7 @@ This section explains how enterprise beans can be packaged in enterprise bean JA
 
 * <<_packaging_enterprise_beans_in_war_modules>>
 
-=== Packaging Enterprise Beans in enterprise bean JAR Modules
+=== Packaging Enterprise Beans in Enterprise Bean JAR Modules
 
 An enterprise bean JAR file is portable and can be used for various applications.
 
