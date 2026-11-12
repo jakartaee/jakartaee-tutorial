@@ -44,7 +44,7 @@ In this case, the `\{1}` substitution parameter is replaced by the component's l
 See xref:faces-page/faces-page.adoc#_displaying_error_messages_with_the_hmessage_and_hmessages_tags[Displaying Error Messages with the h:message and h:messages Tags] for information on how to display validation error messages on the page when validation fails.
 
 Instead of using the standard validators, you can use Bean Validation to validate data.
-If you specify bean validation constraints on your managed bean properties, the constraints are automatically placed on the corresponding fields on your applications web pages.
+If you specify bean validation constraints on your managed bean properties, the constraints are automatically placed on the corresponding fields on your application's web pages.
 See xref:beanvalidation:bean-validation/bean-validation.adoc#_introduction_to_jakarta_bean_validation[Introduction to Jakarta Bean Validation] for more information.
 You do not need to specify the `validateBean` tag to use Bean Validation, but the tag allows you to use more advanced Bean Validation features.
 For example, you can use the `validationGroups` attribute of the tag to specify constraint groups.

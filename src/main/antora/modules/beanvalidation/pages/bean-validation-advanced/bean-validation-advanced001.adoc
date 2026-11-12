@@ -144,7 +144,7 @@ public class Employee extends Person {
 }
 ----
 
-The constraint definition `@USPhoneNumber` is define in the sample listed under <<_using_the_built_in_constraints_to_make_a_new_constraint>>.
+The constraint definition `@USPhoneNumber` is defined in the sample listed under <<_using_the_built_in_constraints_to_make_a_new_constraint>>.
 In the sample, another constraint `@Pattern` is used to validate the phone number.
 
 == Using In-Built Value Extractors in Custom Containers
@@ -281,15 +281,15 @@ ValidatorFactory validatorFactory = Validation
     Validator validator = context.getValidator();
 ----
 
-Using this validator, `StatsisticsPrinter` is validated in the following sequence of operations:
+Using this validator, `StatisticsPrinter` is validated in the following sequence of operations:
 
 . `StatisticsPrinter` is validated.
 
 .. The members of `StatisticsPrinter` that need cascading validation are validated.
 
-.. For container types, value extractor is determined. In the case of `StatsCalculator`, `ExtractorForStatsCalculator` is found and then values are retrieved for validation.
+.. For container types, the value extractor is determined. In the case of `StatsCalculator`, `ExtractorForStatsCalculator` is found and then values are retrieved for validation.
 
 .. `StatsCalculator` and its members such as `List` are validated.
 
-.. In-built `ValueExtractor` for `java.util.List` is used to retrieve the values of elements of the list and the validated.
+.. The built-in `ValueExtractor` for `java.util.List` is used to retrieve the values of elements of the list to be validated.
 In this case, Employee and the field "phone" that is annotated with `@USPhoneNumber` constraint is validated.

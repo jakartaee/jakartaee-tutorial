@@ -89,7 +89,7 @@ The `cancel` method returns `true` if the cancellation was successful and `false
 
 When the invocation cannot be cancelled, the `mayInterruptIfRunning` parameter is used to alert the session bean instance on which the method invocation is running that the client attempted to cancel the invocation.
 If `mayInterruptIfRunning` is set to `true`, calls to `SessionContext.wasCancelled` by the session bean instance will return `true`.
-If `mayInterruptIfRunning` is to set `false`, calls to `SessionContext.wasCancelled` by the session bean instance will return `false`.
+If `mayInterruptIfRunning` is set to `false`, calls to `SessionContext.wasCancelled` by the session bean instance will return `false`.
 
 The `Future<V>.isCancelled` method is used to check whether the method invocation was cancelled before the asynchronous method invocation completed by calling `Future<V>.cancel`.
 The `isCancelled` method returns `true` if the invocation was cancelled.

@@ -90,12 +90,12 @@ The Database identity store calls this method when initializing, passing the `ha
 The `hashedPassword` value should be provided exactly as it was returned from the database.
 
 * `generate(char[] password)` -- generate a password hash from the supplied password.
-The value returned should be formatted and encoded exactly it would be stored in the database.
+The value returned should be formatted and encoded exactly as it would be stored in the database.
 While it is useful to generate the hash of a caller-supplied password during `verify()`, this method is intended primarily for use by applications or `IdentityStore` implementations that want to support password management/reset capability without having to duplicate the code used to verify passwords.
 
 Note that, while the interface is oriented toward hashing passwords, it can also support alternative approaches, such as two-way encryption of stored passwords.
 
-There is a built-in `Pbkdf2PasswordHash` implementation that supports, as it's name suggests, PBKDF2 password hashing.
+There is a built-in `Pbkdf2PasswordHash` implementation that supports, as its name suggests, PBKDF2 password hashing.
 It supports several parameters that control the generation of hash values (key size, iterations, and so on -- see the Javadoc), and those parameters are encoded into the resulting hash value, so that hashes can be verified even if the currently configured parameters are different from the parameters in effect when a stored hash was generated.
 
 While it is necessary to write a custom `PasswordHash` to enable interoperability with a legacy identity store that stores password hashes in a format other than the `Pbkdf2PasswordHash` format, developers should consider carefully whether `Pbkdf2PasswordHash` is sufficient for new identity stores, and avoid writing a new PasswordHash implementation without a solid understanding of the cryptographic and other security considerations involved.
@@ -119,9 +119,9 @@ For example, a web site may remember you when you visit, and prompt for your pas
 
 RememberMe works as follows:
 
-* When a request from an unauthenicated user is received, the user is authenticated using an `HttpAuthenticationMechanism` that is provided by the application (this is required -- `RememberMeIdentityStore` can only be used in conjunction with an application-supplied `HttpAuthenticationMechanism`).
+* When a request from an unauthenticated user is received, the user is authenticated using an `HttpAuthenticationMechanism` that is provided by the application (this is required -- `RememberMeIdentityStore` can only be used in conjunction with an application-supplied `HttpAuthenticationMechanism`).
 
-* After authentication, the configured `RememberMeIdentityStore` saves information about the user's authenticated identity, so that it be restored later, and generates a long-lived "remember me" login token that is sent back to the client, perhaps as a cookie.
+* After authentication, the configured `RememberMeIdentityStore` saves information about the user's authenticated identity, so that it can be restored later, and generates a long-lived "remember me" login token that is sent back to the client, perhaps as a cookie.
 
 * On a subsequent visit to the application, the client presents the login token.
 The `RememberMeIdentityStore` then validates the token and returns the stored user identity, which is then established as the user's authenticated identity.

@@ -33,9 +33,9 @@ image::common:jakartaeett_dt_027.svg["Diagram of Jakarta Messaging architecture,
 
 === Messaging Styles
 
-Before the Jakarta Messaging existed, most messaging products supported either the point-to-point or the publish/subscribe style of messaging.
+Before Jakarta Messaging existed, most messaging products supported either the point-to-point or the publish/subscribe style of messaging.
 The Jakarta Messaging specification defines compliance for each style.
-A Messaging provider must implement both styles, and the Jakarta Messaging provides interfaces that are specific to each.
+A Messaging provider must implement both styles, and Jakarta Messaging provides interfaces that are specific to each.
 The following subsections describe these messaging styles.
 
 Jakarta Messaging, however, makes it unnecessary to use only one of the two styles.

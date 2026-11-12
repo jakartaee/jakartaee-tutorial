@@ -53,7 +53,7 @@ The application then acquires object references needed by the view and calls the
 
 Sometimes, an application might need to redirect to a different web application resource, such as a web service, or generate a response that does not contain Jakarta Faces components.
 In these situations, the developer must skip the Render Response phase by calling the `FacesContext.responseComplete` method.
-This situation is also shown in , with the arrows labelled Response Complete.
+This situation is also shown in <<_jakarta_faces_standard_request_response_lifecycle>>, with the arrows labelled Response Complete.
 
 The most common situation is that a Jakarta Faces component submits a request for another Jakarta Faces page.
 In this case, the Jakarta Faces implementation handles the request and automatically goes through the phases in the lifecycle to perform any necessary conversions, validations, and model updates and to generate the response.

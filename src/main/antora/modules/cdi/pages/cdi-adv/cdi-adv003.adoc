@@ -1,6 +1,6 @@
 == Using Producer Methods, Producer Fields, and Disposer Methods in CDI Applications
 
-A producer method generates an object that can then be injected.Typically, you use producer methods in the following situations:
+A producer method generates an object that can then be injected. Typically, you use producer methods in the following situations:
 
 * When you want to inject an object that is not itself a bean
 

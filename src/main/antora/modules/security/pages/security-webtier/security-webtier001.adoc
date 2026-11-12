@@ -25,7 +25,7 @@ See xref:security-intro/security-intro.adoc#_overview_of_jakarta_security[Overvi
 Declarative security for web applications is described in xref:security-webtier/security-webtier.adoc#_securing_web_applications[Securing Web Applications].
 
 * Programmatic security is embedded in an application and can be used to make security decisions when declarative security alone is not sufficient to express the security model of an application.
-Declarative security alone may not be sufficient when conditional login in a particular work flow, instead of for all cases, is required in the middle of an application.
+Declarative security alone may not be sufficient when conditional login in a particular workflow, instead of for all cases, is required in the middle of an application.
 See xref:security-intro/security-intro.adoc#_overview_of_jakarta_security[Overview of Jakarta Security] for more information.
 +
 Servlet 5.0 provides the `authenticate`, `login`, and `logout` methods of the `HttpServletRequest` interface.

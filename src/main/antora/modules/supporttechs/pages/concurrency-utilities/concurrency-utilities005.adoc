@@ -53,7 +53,7 @@ Use the following settings (keep the default values for other settings):
 
 . Click OK.
 
-. On the On the Managed Executor Services page, click New again.
+. On the Managed Executor Services page, click New again.
 
 . In the JNDI Name field, enter `MES_Low` to create the low-priority Managed Executor Service.
 Use the following settings (keep the default values for other settings):

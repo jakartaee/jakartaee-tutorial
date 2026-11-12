@@ -60,9 +60,9 @@ For example, components of an enterprise application for an automobile manufactu
 * The business can publish updated catalog items to its sales force.
 
 Using messaging for these tasks allows the various components to interact with one another efficiently, without tying up network or other resources.
-<<_messaging_in_an_enterpise_application>> illustrates how this simple example might work.
+<<_messaging_in_an_enterprise_application>> illustrates how this simple example might work.
 
-[[_messaging_in_an_enterpise_application]]
+[[_messaging_in_an_enterprise_application]]
 .Messaging in an Enterprise Application
 image::common:jakartaeett_dt_026.svg["Diagram showing messaging between various departments in an enterprise"]
 

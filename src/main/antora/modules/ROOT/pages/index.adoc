@@ -68,7 +68,7 @@ used in this book.
 |===
 |Placeholder |Description |Default Value
 
-|`_as-install_` |Represents the base installation directory for GlassFish Server. | Installations on the Solaris operating system, Linux operating system, and Mac operating system:
+|`_as-install_` |Represents the base installation directory for GlassFish Server. |Installations on the Solaris operating system, Linux operating system, and Mac operating system:
 
 `_user's-home-directory_/glassfish6/glassfish`
 

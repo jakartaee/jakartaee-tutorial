@@ -93,7 +93,7 @@ src/main/webapp
         simple-flow-page2.xhtml
 ----
 
-The `simple-flow` example has an empty configuration file, which is by convention named flow-name-`flow.xml`.
+The `simple-flow` example has an empty configuration file, which is by convention named `_flow-name_-flow.xml`.
 The flow does not require any configuration for the following reasons.
 
 * The flow does not call another flow, nor does it pass parameters to another flow.

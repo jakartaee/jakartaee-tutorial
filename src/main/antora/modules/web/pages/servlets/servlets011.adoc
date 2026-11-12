@@ -28,7 +28,7 @@ The default size is unlimited.
 The web container will throw an exception if the overall size of all uploaded files exceeds this threshold.
 The default size is unlimited.
 
-For, example, the `@MultipartConfig` annotation could be constructed as follows:
+For example, the `@MultipartConfig` annotation could be constructed as follows:
 
 [source,java]
 ----

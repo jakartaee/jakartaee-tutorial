@@ -210,7 +210,7 @@ See <<_jakarta_messaging_messages>> for more information.
 === Jakarta Messaging Message Consumers
 
 A message consumer is an object that is created by a `JMSContext` or a session and used for receiving messages sent to a destination.
-A message producer created by a `JMSContext` implements the `JMSConsumer` interface.
+A message consumer created by a `JMSContext` implements the `JMSConsumer` interface.
 The simplest way to create a message consumer is to use the `JMSContext.createConsumer` method:
 
 [source,java]
@@ -401,7 +401,7 @@ context.unsubscribe(subName);
 
 The `unsubscribe` method deletes the state the provider maintains for the subscription.
 
-<<_consumers_on_a_durable_subscription>> show the difference between a nondurable and a durable subscription.
+<<_consumers_on_a_durable_subscription>> shows the difference between a nondurable and a durable subscription.
 With an ordinary, nondurable subscription, the consumer and the subscription begin and end at the same point and are, in effect, identical.
 When the consumer is closed, the subscription also ends.
 Here, `create` stands for a call to `JMSContext.createConsumer` with a `Topic` argument, and `close` stands for a call to `JMSConsumer.close`.
@@ -598,7 +598,7 @@ String message = receiver.receiveBody(String.class);
 You can use the `receiveBody` method to receive any type of message except `StreamMessage` and `Message`, as long as the body of the message can be assigned to a particular type.
 
 An empty `Message` can be useful if you want to send a message that is simply a signal to the application.
-Some of the examples in xref:jms-examples/jms-examples.adoc#_jakarta_messaging_examples[Jakarta Messaging Examples], send an empty message after sending a series of text messages.
+Some of the examples in xref:jms-examples/jms-examples.adoc#_jakarta_messaging_examples[Jakarta Messaging Examples] send an empty message after sending a series of text messages.
 For example:
 
 [source,java]
@@ -608,7 +608,7 @@ context.createProducer().send(dest, context.createMessage());
 
 The consumer code can then interpret a non-text message as a signal that all the messages sent have now been received.
 
-The examples in xref:jms-examples/jms-examples.adoc#_jakarta_messaging_examples[Jakarta Messaging Examples], use messages of type `TextMessage`, `MapMessage`, and `Message`.
+The examples in xref:jms-examples/jms-examples.adoc#_jakarta_messaging_examples[Jakarta Messaging Examples] use messages of type `TextMessage`, `MapMessage`, and `Message`.
 
 === Jakarta Messaging Queue Browsers
 

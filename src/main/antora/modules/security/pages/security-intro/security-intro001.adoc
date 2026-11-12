@@ -35,7 +35,7 @@ Other chapters in this Part discuss security requirements in web tier and enterp
 
 * xref:security-jakartaee/security-jakartaee.adoc#_getting_started_securing_enterprise_applications[Getting Started Securing Enterprise Applications] explains how to add security to Jakarta EE components, such as enterprise beans and application clients.
 
-* xref:security-api/security-api.adoc#_using_jakarta_security[Using Jakarta Security] describes the authentication and credential validation funtionality provided by Jakarta Security, and provides examples.
+* xref:security-api/security-api.adoc#_using_jakarta_security[Using Jakarta Security] describes the authentication and credential validation functionality provided by Jakarta Security, and provides examples.
 
 === A Simple Application Security Walkthrough
 
@@ -101,7 +101,7 @@ The association is implemented as two related security contexts: one in the web 
 .Invoking an Enterprise Bean Business Method
 image::common:jakartaeett_dt_043.svg["Diagram of authorization process between web component and enterprise bean"]
 
-The enterprise container is responsible for enforcing access control on the enterprise bean method.
+The enterprise bean container is responsible for enforcing access control on the enterprise bean method.
 The container consults the security policy associated with the enterprise bean to determine the security roles that are permitted access to the method.
 The security policy is derived from annotations or from the deployment descriptor.
 For each role, the enterprise bean container determines whether it can map the caller to the role by using the security context associated with the call.
